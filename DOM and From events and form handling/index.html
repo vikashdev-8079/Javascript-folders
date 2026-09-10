@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    
+
+    <form action="" id="form">
+      <div>
+        <label for="username">Name:</label>
+        <input
+          type="text"
+          name="username"
+          id="username"
+          value=""
+          placeholder="Enter your username"
+          autocomplete="username"
+        />
+        <span class="error-message" ></span>
+      </div>
+
+      <div>
+        <label for="email">Email:</label>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          placeholder="Enter your enmail"
+        />
+             <span class="error-message" ></span>
+      </div>
+      <div>
+        <label for="password">Password:</label>
+        <input
+          type="password"
+          name="password"
+          id="password"
+          placeholder="Enter your password"
+          autocomplete="current-password"/>
+               <span class="error-message" ></span>
+      </div>
+<p id="password-hint" class="hidden">must be at list 8 character</p>
+      <div>
+        <label for="bio">Bio:</label>
+        <textarea name="bio" id="bio" placeholder="Enter your Bio.."></textarea>
+        <p id="character-count"></p>
+             <span class="error-message" ></span>
+      </div>
+
+        <div>
+        
+       <input type="checkbox" name="checkbox" id="checkbox">
+       <label for="checkbox">I agree to the condition</label>
+            <span class="error-message" ></span>
+       
+      </div>
+      <div>
+        <label for="country">Select your country:</label>
+        <select name="country" id="country">
+            <option value="India">India</option>
+            <option value="USA">USA</option>
+            <option value="UK">UK</option>
+        </select>
+             <span class="error-message" ></span>
+      </div>
+      <br />
+      <button type="submit" id="btn">Creat Account</button>
+    </form>
+
+    <h1 class="hidden">Account created successfully</h1>
+    <script src="index.js"></script>
+  </body>
+</html>

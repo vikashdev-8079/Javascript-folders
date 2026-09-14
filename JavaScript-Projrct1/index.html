@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body class="bg-slate-100 min-h-screen bg-[url('https://images.hdqwalls.com/download/graceful-morning-birds-a-new-day-in-minimalism-6o-1920x1080.jpg')] bg-contain">
+    <div class="max-w-md mx-auto rounded-md bg-white mt-10 ">
+      <div class="bg-indigo-500 p-5 ">
+        <h1 class="text-2xl text-center  underline ">Todo App</h1>
+      </div>
+
+      <div class="p-5">
+        <form action="" class="flex gap-4" id="todo-form" >
+          
+          <input  id="todo-input"type="text" class="border border-black flex-1 p-2 rounded-sm" placeholder="Enter task description " />
+          <button class="p-2 bg-violet-700 rounded-sm px-5 text-white" id="form-btn">Add</button>
+        </form>
+        <div class="flex justify-between pt-6 pb-1 text-xs border-b border-black" >
+           <p id="task-count">Task(0)</p>
+          <p id="complete-count">COMPLETED:0</p>
+        </div>
+       
+
+
+        <ul id="todo-list" class="py-5 flex flex-col gap-3   ">
+          <!-- <li class="flex gap-2 border  border-slate-300 rounded-xl p-4" data-id="1" >
+            <input type="checkbox" data-id="1">
+            <p class="flex-1">Go to gym</p>
+            <div class="flex gap-2">
+              <button >Edit</button>
+              <button >Delete</button>
+            </div>
+
+          </li> -->
+        </ul>
+      </div>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
